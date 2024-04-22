@@ -1,0 +1,47 @@
+-> Admin:- 1
+ email :- srushti@gmail.com
+ password :- S12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYyMjIxNTMwMjc1NDg2YzZmOTE3OThmIiwiaWF0IjoxNzEzNTE1ODM3fQ.6QW4PY7EBBmg5mFbyRZeXCiO6TtwEQAUNU8psx_0IaY
+
+-> Admin:- 2
+ email :- monika@gmail.com
+ password :- 12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYyMjJjNmJjOTNlNDBiNzZjYTU5MWQ2IiwiaWF0IjoxNzEzNTE2MDY2fQ.Lo7wk0ot2QYEHyPI2UNT-SzpLhh8Gbg7CB59DAQ7dCA
+
+-> Admin:- 3
+ email :- jenil@gmail.com
+ password :- 12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYyMjJjOTNjOTNlNDBiNzZjYTU5MWQ5IiwiaWF0IjoxNzEzNTE2MTY5fQ.btyD76tuPCdxLAKm45f4nVS-2oyqgvtFEFR5OW0MK60 
+
+-> Admin:- 4
+ email :- dhaval@gmail.com
+ password :- 12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYyMjJjYzVjOTNlNDBiNzZjYTU5MWRjIiwiaWF0IjoxNzEzNTE2MjQ5fQ.SzRNX8w9EiDscpt8HcBizedi2rCrm0WpZ3YrbE-ypQg
+
+-------------------------------------------------------------------------------------------------------------------------
+
+-> User:- 1
+ email :- isha@gmail.com
+ password :- I12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyMzk2Y2MxY2E3YTIxMWJiOTdlMDQiLCJpYXQiOjE3MTM1MjE3ODh9.8RyPfT94bwcheriSZscv43YZJuNTyZvct95A0m8vUNA
+
+-> User:- 2
+ email :- priyanshi@gmail.com
+ password :- 12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyMzliOWMxY2E3YTIxMWJiOTdlMDciLCJpYXQiOjE3MTM1MjIxMTd9.CQIp_A-Q2QehyUFI7e7ZaXVXzO__z0vJ_38BxfP8qUM
+
+-> User:- 3
+ email :- harsh@gmail.com
+ password :- 12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyM2EwNmMxY2E3YTIxMWJiOTdlMGEiLCJpYXQiOjE3MTM1MjIyMzZ9.q4PXwJVrWygbiJK7p65xq3YKikxOYhmveTRt2yVlEqg
+
+-> User:- 4
+ email :- siddharth@gmail.com
+ password :- 12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyM2EzZGMxY2E3YTIxMWJiOTdlMGQiLCJpYXQiOjE3MTM1MjIyODh9.bFEKmw9HvKH9DdLznaUzflddNS9DsfdC54B5r-FUqj4
+
+-> User:- 5
+ email :- krupali@gmail.com
+ password :- 12345
+ token :- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyM2E2YWMxY2E3YTIxMWJiOTdlMTAiLCJpYXQiOjE3MTM1MjIzNzN9.yqhVaVlUo8luqSaE-U9Me_CykkHVlbuj9aG6i5QTFss
+

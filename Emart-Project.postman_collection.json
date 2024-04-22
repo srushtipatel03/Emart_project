@@ -1,0 +1,3928 @@
+{
+	"info": {
+		"_postman_id": "e9d64c96-6288-4045-b3a5-a23237d4ede5",
+		"name": "Emart-Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33156287"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Admin(user)",
+					"item": [
+						{
+							"name": "Register Admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"dhaval\",\r\n    \"lastName\": \"solanki\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"dhaval@gmail.com\",\r\n    \"password\": \"12345\",\r\n    \"mobileNo\": 1234567890\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/register-Admin",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"register-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Register Admin",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"srushti\",\r\n    \"lastName\": \"sojitra\",\r\n    \"gender\": \"Female\",\r\n    \"email\": \"srushti@gmail.com\",\r\n    \"password\": \"12345\",\r\n    \"mobileNo\": 1234567890\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/register-Admin",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"register-Admin"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "382"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17e-5ctbsYzSBWoOIE2V86yL7rggbNA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 07:46:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"firstName\": \"srushti\",\n        \"lastName\": \"sojitra\",\n        \"gender\": \"Female\",\n        \"email\": \"srushti@gmail.com\",\n        \"password\": \"$2b$10$xQQHkmCJoN1gVOuyPV3bDeBR1AYCtCju.z5hn.Gni9Wz76U/QiEx6\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"_id\": \"662221530275486c6f91798f\",\n        \"createdAt\": \"2024-04-19T07:46:27.605Z\",\n        \"updatedAt\": \"2024-04-19T07:46:27.605Z\"\n    },\n    \"message\": \"Admin is Added Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Login Admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"dhaval@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/login-Admin",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"login-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Login Admin",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"srushti@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/login-Admin",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"login-Admin"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "206"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ce-Bw18paBd7/PzIUkvW4QMc22s5S8\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 08:37:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYyMjIxNTMwMjc1NDg2YzZmOTE3OThmIiwiaWF0IjoxNzEzNTE1ODM3fQ.6QW4PY7EBBmg5mFbyRZeXCiO6TtwEQAUNU8psx_0IaY\",\n    \"message\": \"Admin Login SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/get-All-Admin",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"get-All-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/get-All-Admin",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"get-All-Admin"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1312"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"520-auyIBiZNXuWO/bzNlJfLTRrZxo0\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 08:51:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"662221530275486c6f91798f\",\n        \"firstName\": \"srushti\",\n        \"lastName\": \"sojitra\",\n        \"gender\": \"Female\",\n        \"email\": \"srushti@gmail.com\",\n        \"password\": \"$2b$10$xQQHkmCJoN1gVOuyPV3bDeBR1AYCtCju.z5hn.Gni9Wz76U/QiEx6\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-19T07:46:27.605Z\",\n        \"updatedAt\": \"2024-04-19T07:46:27.605Z\"\n    },\n    {\n        \"_id\": \"66222c6bc93e40b76ca591d6\",\n        \"firstName\": \"monika\",\n        \"lastName\": \"kathiriya\",\n        \"gender\": \"Female\",\n        \"email\": \"monika@gmail.com\",\n        \"password\": \"$2b$10$VeFQh5sl4cUtxn48lXnttOEgt3/ZRlHuQ9.GIK5F1tH4K0FKw6eO.\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-19T08:33:47.900Z\",\n        \"updatedAt\": \"2024-04-19T08:33:47.900Z\"\n    },\n    {\n        \"_id\": \"66222c93c93e40b76ca591d9\",\n        \"firstName\": \"jenil\",\n        \"lastName\": \"kakadiya\",\n        \"gender\": \"Male\",\n        \"email\": \"jenil@gmail.com\",\n        \"password\": \"$2b$10$8N2izhu0p033Zw7yjmceu.ZfTgboP4crii1HEoPyiREVGS8tLA1oG\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-19T08:34:27.300Z\",\n        \"updatedAt\": \"2024-04-19T08:34:27.300Z\"\n    },\n    {\n        \"_id\": \"66222cc5c93e40b76ca591dc\",\n        \"firstName\": \"dhaval\",\n        \"lastName\": \"solanki\",\n        \"gender\": \"Male\",\n        \"email\": \"dhaval@gmail.com\",\n        \"password\": \"$2b$10$WhttDgCMZWYQZTjweIPVsuQxHNOvaH3kUFE2aY69Se4TrcLCqyVhu\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-19T08:35:17.350Z\",\n        \"updatedAt\": \"2024-04-19T08:35:17.350Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/get-Admin?adminId=662221530275486c6f91798f",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"get-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "662221530275486c6f91798f"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/get-Admin?adminId=662221530275486c6f91798f",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"get-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "662221530275486c6f91798f"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "329"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"149-Msyk1AhiqI+SUCTF3jjzAYY6lYk\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 08:56:45 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"662221530275486c6f91798f\",\n    \"firstName\": \"srushti\",\n    \"lastName\": \"sojitra\",\n    \"gender\": \"Female\",\n    \"email\": \"srushti@gmail.com\",\n    \"password\": \"$2b$10$xQQHkmCJoN1gVOuyPV3bDeBR1AYCtCju.z5hn.Gni9Wz76U/QiEx6\",\n    \"mobileNo\": 1234567890,\n    \"isDelete\": false,\n    \"isAdmin\": true,\n    \"createdAt\": \"2024-04-19T07:46:27.605Z\",\n    \"updatedAt\": \"2024-04-19T07:46:27.605Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"lastName\" : \"patel\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/update-Admin?adminId=662221530275486c6f91798f",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"update-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "662221530275486c6f91798f"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Admin",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"lastName\" : \"patel\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/update-Admin?adminId=662221530275486c6f91798f",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"update-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "662221530275486c6f91798f"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "379"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17b-6Yor76wlqXovP+F1gmjEudijqLU\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 09:03:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"662221530275486c6f91798f\",\n        \"firstName\": \"srushti\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"srushti@gmail.com\",\n        \"password\": \"$2b$10$xQQHkmCJoN1gVOuyPV3bDeBR1AYCtCju.z5hn.Gni9Wz76U/QiEx6\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-19T07:46:27.605Z\",\n        \"updatedAt\": \"2024-04-19T09:03:51.434Z\"\n    },\n    \"message\": \"Admin Updated Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/delete-Admin?adminId=66222c93c93e40b76ca591d9",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"delete-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "66222c93c93e40b76ca591d9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Admin",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/delete-Admin?adminId=66222c93c93e40b76ca591d9",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"delete-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "66222c93c93e40b76ca591d9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "374"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"176-UalMbL2xtvc4erhhMOtPXjTncLU\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 09:07:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"66222c93c93e40b76ca591d9\",\n        \"firstName\": \"jenil\",\n        \"lastName\": \"kakadiya\",\n        \"gender\": \"Male\",\n        \"email\": \"jenil@gmail.com\",\n        \"password\": \"$2b$10$8N2izhu0p033Zw7yjmceu.ZfTgboP4crii1HEoPyiREVGS8tLA1oG\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": true,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-19T08:34:27.300Z\",\n        \"updatedAt\": \"2024-04-19T09:07:18.946Z\"\n    },\n    \"message\": \"Admin Deleted Succesfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"oldPassword\": \"12345\",\r\n    \"newPassword\": \"S12345\",\r\n    \"confirmPassword\": \"S12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/update-Password?adminId=662221530275486c6f91798f",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"update-Password"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "662221530275486c6f91798f"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Change Password",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"oldPassword\": \"12345\",\r\n    \"newPassword\": \"S12345\",\r\n    \"confirmPassword\": \"S12345\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/update-Password?adminId=662221530275486c6f91798f",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"update-Password"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "662221530275486c6f91798f"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "382"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17e-pg/MLYqflv8HLi9jNE3bxA4//VQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 09:13:15 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"662221530275486c6f91798f\",\n        \"firstName\": \"srushti\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"srushti@gmail.com\",\n        \"password\": \"$2b$10$BVseIqbLI67YCho/LdwRMOpY7Kp6oB.NH6WacE0qATYdgip5YssTy\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-19T07:46:27.605Z\",\n        \"updatedAt\": \"2024-04-19T09:13:15.100Z\"\n    },\n    \"message\": \"Password changed successfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Add Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Girls t-shirt\",\r\n    \"description\":\"Vibrant and playful girls' t-shirt featuring whimsical designs, perfect for casual outings or lounging at home.\",\r\n    \"price\": 3400,\r\n    \"category\": [\"Kids' Fashion\", \"Casual Wear\"],\r\n    \"size\": \"S, M, L\",\r\n    \"color\": \"Pink, Sea-green, Violate\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/product/add-Product",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"add-Product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add Product",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\": \"Violate-Jacket\",\r\n    \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\r\n    \"price\": 500,\r\n    \"category\": [\"Streetwear\", \"Punk fashion\"],\r\n    \"size\": \"S,M,L\",\r\n    \"color\": \"Violate\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/product/add-Product",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"add-Product"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "395"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"18b-w8aVoe4tltjBa4amgU0GWay28oU\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Apr 2024 03:30:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"title\": \"Violate-Jacket\",\n        \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\n        \"price\": 500,\n        \"category\": [\n            \"Streetwear\",\n            \"Punk fashion\"\n        ],\n        \"size\": \"S,M,L\",\n        \"color\": \"Violate\",\n        \"isDelete\": false,\n        \"_id\": \"662336e87e097e07b9088718\",\n        \"createdAt\": \"2024-04-20T03:30:48.341Z\",\n        \"updatedAt\": \"2024-04-20T03:30:48.341Z\"\n    },\n    \"message\": \"Product Added Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/product/get-All-Product",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"get-All-Product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/product/get-All-Product",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"get-All-Product"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3855"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f0f-4M0SEtSq8jbh6+lJA7lvJTbR7G0\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:45:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"totalCounts\": 10,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"result\": [\n        {\n            \"_id\": \"662336e87e097e07b9088718\",\n            \"title\": \"Violate-Jacket\",\n            \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\n            \"price\": 500,\n            \"category\": [\n                \"Streetwear\",\n                \"Punk fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Violate\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:30:48.341Z\",\n            \"updatedAt\": \"2024-04-20T03:30:48.341Z\"\n        },\n        {\n            \"_id\": \"662338207e097e07b908871c\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"A classic, versatile wardrobe staple for casual comfort and style.\",\n            \"price\": 900,\n            \"category\": [\n                \"Appare\",\n                \"Fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Beige\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:36:00.483Z\",\n            \"updatedAt\": \"2024-04-20T03:36:00.483Z\"\n        },\n        {\n            \"_id\": \"66234e397e097e07b9088720\",\n            \"title\": \"High heels shoe\",\n            \"description\": \"Elevating fashion and stature with every step\",\n            \"price\": 900,\n            \"category\": [\n                \"Footwear\",\n                \"Fashion Accessories\"\n            ],\n            \"size\": \"7, 8, 9\",\n            \"color\": \"Black\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T05:10:17.222Z\",\n            \"updatedAt\": \"2024-04-20T05:10:17.222Z\"\n        },\n        {\n            \"_id\": \"6625d6134b963b7c94fc9153\",\n            \"title\": \"Sports Slacks\",\n            \"description\": \"Performance-oriented athletic wear designed for versatility, blending the functionality of sports apparel with the comfort and style of casual slacks\",\n            \"price\": 1900,\n            \"category\": [\n                \"Activewear\",\n                \"Fitness Apparel\"\n            ],\n            \"size\": \"28, 30, 32, 34\",\n            \"color\": \"light Blue\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:14:27.881Z\",\n            \"updatedAt\": \"2024-04-22T03:14:27.881Z\"\n        },\n        {\n            \"_id\": \"6625d86e4b963b7c94fc9157\",\n            \"title\": \"Moduler Bathtub\",\n            \"description\": \"A modular bathtub is a customizable bathing fixture designed for flexible installation and configuration, offering versatility in both space utilization and aesthetic appeal.\",\n            \"price\": 15000,\n            \"category\": [\n                \"Fixtures\",\n                \"Interior Design\"\n            ],\n            \"size\": \" 60 inches, 66 inches, and 72 inches\",\n            \"color\": \"Creamy Rose\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:24:30.445Z\",\n            \"updatedAt\": \"2024-04-22T03:24:30.445Z\"\n        },\n        {\n            \"_id\": \"6625d9254b963b7c94fc915b\",\n            \"title\": \"Moduler Toilate\",\n            \"description\": \"Modular Toilet: A customizable restroom solution designed for versatile installation and efficient space utilization.\",\n            \"price\": 12000,\n            \"category\": [\n                \"Architecture\",\n                \"Interior Design\"\n            ],\n            \"size\": \"customize\",\n            \"color\": \"Dark Grey\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:27:33.165Z\",\n            \"updatedAt\": \"2024-04-22T03:27:33.165Z\"\n        },\n        {\n            \"_id\": \"6625d9a24b963b7c94fc915f\",\n            \"title\": \"Modern Hanging Light\",\n            \"description\": \"A sleek and minimalist hanging light fixture, blending contemporary design with functional illumination\",\n            \"price\": 8000,\n            \"category\": [\n                \"Lighting\",\n                \"Interior Decor\"\n            ],\n            \"size\": \"24 inches\",\n            \"color\": \"Copper Red\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:29:38.958Z\",\n            \"updatedAt\": \"2024-04-22T03:29:38.958Z\"\n        },\n        {\n            \"_id\": \"6625da244b963b7c94fc9163\",\n            \"title\": \"Single Seater Chair\",\n            \"description\": \"A single seater chair: A compact seating solution perfect for small spaces, offering both comfort and style.\",\n            \"price\": 2500,\n            \"category\": [\n                \"Furniture\",\n                \"Home Decor\"\n            ],\n            \"size\": \"24 to 36 inches in width, 20 to 30 inches in depth, and 30 to 40 inches in height\",\n            \"color\": \"Dark Brown\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:31:48.096Z\",\n            \"updatedAt\": \"2024-04-22T03:31:48.096Z\"\n        },\n        {\n            \"_id\": \"6625da9c4b963b7c94fc9167\",\n            \"title\": \"Stylish Earring\",\n            \"description\": \"An elegant, silver-detailed earring with a touch of Bohemian charm, perfect for both casual outings and formal occasions.\",\n            \"price\": 2500,\n            \"category\": [\n                \"Fashion Accessories\",\n                \"Jewelry\"\n            ],\n            \"color\": \"Silver\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:33:48.320Z\",\n            \"updatedAt\": \"2024-04-22T03:33:48.320Z\"\n        },\n        {\n            \"_id\": \"6625db054b963b7c94fc916b\",\n            \"title\": \"Grey tote bag\",\n            \"description\": \"Versatile grey tote bag, perfect for everyday essentials, blending style and functionality.\",\n            \"price\": 200,\n            \"category\": [\n                \"Fashion Accessories\",\n                \"Everyday Carry Essentials\"\n            ],\n            \"color\": \"Solid\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:35:33.502Z\",\n            \"updatedAt\": \"2024-04-22T03:35:33.502Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/product/get-Product?productId=662336e87e097e07b9088718",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"get-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "662336e87e097e07b9088718"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/product/get-Product?productId=662336e87e097e07b9088718",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"get-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "662336e87e097e07b9088718"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "372"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"174-+nZaLH2AI+Ik4Mrptq0JtYgnmDo\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:48:26 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"662336e87e097e07b9088718\",\n        \"title\": \"Violate-Jacket\",\n        \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\n        \"price\": 500,\n        \"category\": [\n            \"Streetwear\",\n            \"Punk fashion\"\n        ],\n        \"size\": \"S,M,L\",\n        \"color\": \"Violate\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-20T03:30:48.341Z\",\n        \"updatedAt\": \"2024-04-20T03:30:48.341Z\"\n    },\n    \"totalRating\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"price\": 450\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/product/update-Product?productId=662336e87e097e07b9088718",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"update-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "662336e87e097e07b9088718"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Product",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"price\": 450\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/product/update-Product?productId=662336e87e097e07b9088718",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"update-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "662336e87e097e07b9088718"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "397"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"18d-R9KlttY/LBcK/yKpW2Ht6BfttJk\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:50:30 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"662336e87e097e07b9088718\",\n        \"title\": \"Violate-Jacket\",\n        \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\n        \"price\": 450,\n        \"category\": [\n            \"Streetwear\",\n            \"Punk fashion\"\n        ],\n        \"size\": \"S,M,L\",\n        \"color\": \"Violate\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-20T03:30:48.341Z\",\n        \"updatedAt\": \"2024-04-22T03:50:30.727Z\"\n    },\n    \"message\": \"Product updated successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/product/delete-Product?productId=6625db054b963b7c94fc916b",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"delete-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "6625db054b963b7c94fc916b"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Product",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/product/delete-Product?productId=6625db054b963b7c94fc916b",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"delete-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "6625db054b963b7c94fc916b"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "407"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"197-qq98eAv6KBvZZvjNrw7emvHjUaE\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:51:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"6625db054b963b7c94fc916b\",\n        \"title\": \"Grey tote bag\",\n        \"description\": \"Versatile grey tote bag, perfect for everyday essentials, blending style and functionality.\",\n        \"price\": 200,\n        \"category\": [\n            \"Fashion Accessories\",\n            \"Everyday Carry Essentials\"\n        ],\n        \"color\": \"Solid\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T03:35:33.502Z\",\n        \"updatedAt\": \"2024-04-22T03:51:51.119Z\"\n    },\n    \"message\": \"Product deleted successfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cart",
+					"item": [
+						{
+							"name": "Get All Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/cart/get-All-Cart",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"cart",
+										"get-All-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/cart/get-All-Cart",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"cart",
+												"get-All-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1620"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"654-u4xMIy1Z7RmfIUkGfDD+c91syEw\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 05:33:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6625f185569731107d2403cf\",\n        \"user\": {\n            \"_id\": \"6622396cc1ca7a211bb97e04\",\n            \"firstName\": \"isha\",\n            \"lastName\": \"patel\",\n            \"gender\": \"Female\",\n            \"email\": \"isha@gmail.com\",\n            \"password\": \"$2b$10$1aARexFgGI6JxLw4LRIAI.oE4HpOqKx/GgWxzW50D/e5EskM3hPxq\",\n            \"mobileNo\": 1234567890,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n            \"updatedAt\": \"2024-04-19T10:49:28.895Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"662336e87e097e07b9088718\",\n            \"title\": \"Violate-Jacket\",\n            \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\n            \"price\": 450,\n            \"category\": [\n                \"Streetwear\",\n                \"Punk fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Violate\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:30:48.341Z\",\n            \"updatedAt\": \"2024-04-22T03:50:30.727Z\"\n        },\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T05:11:33.918Z\",\n        \"updatedAt\": \"2024-04-22T05:11:33.918Z\"\n    },\n    {\n        \"_id\": \"6625f1e4569731107d2403d9\",\n        \"user\": {\n            \"_id\": \"6622396cc1ca7a211bb97e04\",\n            \"firstName\": \"isha\",\n            \"lastName\": \"patel\",\n            \"gender\": \"Female\",\n            \"email\": \"isha@gmail.com\",\n            \"password\": \"$2b$10$1aARexFgGI6JxLw4LRIAI.oE4HpOqKx/GgWxzW50D/e5EskM3hPxq\",\n            \"mobileNo\": 1234567890,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n            \"updatedAt\": \"2024-04-19T10:49:28.895Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"66234e397e097e07b9088720\",\n            \"title\": \"High heels shoe\",\n            \"description\": \"Elevating fashion and stature with every step\",\n            \"price\": 900,\n            \"category\": [\n                \"Footwear\",\n                \"Fashion Accessories\"\n            ],\n            \"size\": \"7, 8, 9\",\n            \"color\": \"Black\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T05:10:17.222Z\",\n            \"updatedAt\": \"2024-04-20T05:10:17.222Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T05:13:08.869Z\",\n        \"updatedAt\": \"2024-04-22T05:13:08.869Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Wishlist",
+					"item": [
+						{
+							"name": "Get All Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/wishlist/get-All-Wishlist",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"wishlist",
+										"get-All-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Wishlist",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/wishlist/get-All-Wishlist",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"wishlist",
+												"get-All-Wishlist"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "402"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"192-xI5In3G69lo5lL4N7c7cBv22zbA\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:32:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"662602295b003835096830f6\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"662336e87e097e07b9088718\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T06:22:33.564Z\",\n        \"updatedAt\": \"2024-04-22T06:27:21.063Z\"\n    },\n    {\n        \"_id\": \"6626024b5b003835096830fa\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"662338207e097e07b908871c\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:23:07.667Z\",\n        \"updatedAt\": \"2024-04-22T06:23:07.667Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reviews",
+					"item": [
+						{
+							"name": "Get All Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/review/get-All-Review",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"review",
+										"get-All-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/review/get-All-Review",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"review",
+												"get-All-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f6-7rqUexx6DIjDUelquwlNArFjyno\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 09:11:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"662627fb56c255e45bc93e80\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"6625d9a24b963b7c94fc915f\",\n        \"rating\": 1,\n        \"comment\": \"Lights are not Good.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T09:03:55.870Z\",\n        \"updatedAt\": \"2024-04-22T09:03:55.870Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Delete Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/review/delete-Review?Id=66262a0356c255e45bc93e8b",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "66262a0356c255e45bc93e8b"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/review/delete-Review?Id=66262a0356c255e45bc93e8b",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "66262a0356c255e45bc93e8b"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "305"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"131-cwpcrmxcb9MUQ9ZKtY4H0VcTPFo\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 09:24:45 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"66262a0356c255e45bc93e8b\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"66234e397e097e07b9088720\",\n        \"rating\": 0,\n        \"comment\": \"It is a bad product ever.\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T09:12:35.624Z\",\n        \"updatedAt\": \"2024-04-22T09:24:45.661Z\"\n    },\n    \"Message\": \"Review is Deleted SuccessFully...\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Register User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"krupali\",\r\n    \"lastName\": \"bhalala\",\r\n    \"gender\": \"Female\",\r\n    \"email\": \"krupali@gmail.com\",\r\n    \"password\": \"12345\",\r\n    \"mobileNo\": 1234567890\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/user/register-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"register-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Register User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"isha\",\r\n    \"lastName\": \"sorathiya\",\r\n    \"gender\": \"Female\",\r\n    \"email\": \"isha@gmail.com\",\r\n    \"password\": \"12345\",\r\n    \"mobileNo\": 1234567890\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/user/register-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"register-User"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "381"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17d-y2Mouga/Z4mt9XQs5GTEAZCXhos\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 09:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"firstName\": \"isha\",\n        \"lastName\": \"sorathiya\",\n        \"gender\": \"Female\",\n        \"email\": \"isha@gmail.com\",\n        \"password\": \"$2b$10$Ywcd3uMta7MQXAn8DK.kHu0qGKAUsYjMMs5ko9wcffnJBCEP7xZGO\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"_id\": \"6622396cc1ca7a211bb97e04\",\n        \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n        \"updatedAt\": \"2024-04-19T09:29:16.351Z\"\n    },\n    \"message\": \"New User Is Added SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Login User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"krupali@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/user/login-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"login-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Login User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"isha@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/user/login-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"login-User"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "203"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"cb-eyaDtbnbdoUXpbz1X0nnfcX6HDA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 10:16:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyMzk2Y2MxY2E3YTIxMWJiOTdlMDQiLCJpYXQiOjE3MTM1MjE3ODh9.8RyPfT94bwcheriSZscv43YZJuNTyZvct95A0m8vUNA\",\n    \"message\": \"User Login SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/user/get-All-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"get-All-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All User",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/user/get-All-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"get-All-User"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1655"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"677-fr6mItHZDA9SFLEFK+TkbeSJ17k\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 10:29:12 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6622396cc1ca7a211bb97e04\",\n        \"firstName\": \"isha\",\n        \"lastName\": \"sorathiya\",\n        \"gender\": \"Female\",\n        \"email\": \"isha@gmail.com\",\n        \"password\": \"$2b$10$Ywcd3uMta7MQXAn8DK.kHu0qGKAUsYjMMs5ko9wcffnJBCEP7xZGO\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n        \"updatedAt\": \"2024-04-19T09:29:16.351Z\"\n    },\n    {\n        \"_id\": \"662239b9c1ca7a211bb97e07\",\n        \"firstName\": \"priyanshi\",\n        \"lastName\": \"italiya\",\n        \"gender\": \"Female\",\n        \"email\": \"priyanshi@gmail.com\",\n        \"password\": \"$2b$10$y0Y/E4th0vJpJvxEeYEqk.H7MvjsDVfWMgW8V/eqw/f/omwLnIX2K\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:30:33.302Z\",\n        \"updatedAt\": \"2024-04-19T09:30:33.302Z\"\n    },\n    {\n        \"_id\": \"66223a06c1ca7a211bb97e0a\",\n        \"firstName\": \"harsh\",\n        \"lastName\": \"vekariya\",\n        \"gender\": \"Male\",\n        \"email\": \"harsh@gmail.com\",\n        \"password\": \"$2b$10$v0kRMnbeJbPrbsh/pAkxmOFFvB8ZVvx.2rhUhtIyztudLOjhlCl6W\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:31:50.113Z\",\n        \"updatedAt\": \"2024-04-19T09:31:50.113Z\"\n    },\n    {\n        \"_id\": \"66223a3dc1ca7a211bb97e0d\",\n        \"firstName\": \"siddharth\",\n        \"lastName\": \"bharodiya\",\n        \"gender\": \"Male\",\n        \"email\": \"siddharth@gmail.com\",\n        \"password\": \"$2b$10$1kRKOmYYpeabiB/iHGnelOQ1aX4y2mZS4UXhYE78P2I74Je6OQkQu\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:32:45.681Z\",\n        \"updatedAt\": \"2024-04-19T09:32:45.681Z\"\n    },\n    {\n        \"_id\": \"66223a6ac1ca7a211bb97e10\",\n        \"firstName\": \"krupali\",\n        \"lastName\": \"bhalala\",\n        \"gender\": \"Female\",\n        \"email\": \"krupali@gmail.com\",\n        \"password\": \"$2b$10$gHCiOkV75CyiUHcu0tsIV.N5cJVONloakoB/77zCkpZu7Iy1Rv10G\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:33:30.469Z\",\n        \"updatedAt\": \"2024-04-19T09:33:30.469Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/user/get-User?userId=6622396cc1ca7a211bb97e04",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"get-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "6622396cc1ca7a211bb97e04"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific User",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/user/get-User?userId=6622396cc1ca7a211bb97e04",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"get-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "6622396cc1ca7a211bb97e04"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "326"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"146-slvG5w8zsEJ4gQHPTq9yE+9qEw4\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 10:31:58 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6622396cc1ca7a211bb97e04\",\n    \"firstName\": \"isha\",\n    \"lastName\": \"sorathiya\",\n    \"gender\": \"Female\",\n    \"email\": \"isha@gmail.com\",\n    \"password\": \"$2b$10$Ywcd3uMta7MQXAn8DK.kHu0qGKAUsYjMMs5ko9wcffnJBCEP7xZGO\",\n    \"mobileNo\": 1234567890,\n    \"isDelete\": false,\n    \"isAdmin\": false,\n    \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n    \"updatedAt\": \"2024-04-19T09:29:16.351Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"lastName\": \"patel\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/user/update-User?userId=6622396cc1ca7a211bb97e04",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"update-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "6622396cc1ca7a211bb97e04"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update User",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"lastName\": \"patel\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/user/update-User?userId=6622396cc1ca7a211bb97e04",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"update-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "6622396cc1ca7a211bb97e04"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "372"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"174-U9qnE/0RuxMGB7qqNhT8Wiyuj5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 10:37:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"6622396cc1ca7a211bb97e04\",\n        \"firstName\": \"isha\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"isha@gmail.com\",\n        \"password\": \"$2b$10$Ywcd3uMta7MQXAn8DK.kHu0qGKAUsYjMMs5ko9wcffnJBCEP7xZGO\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n        \"updatedAt\": \"2024-04-19T10:37:53.430Z\"\n    },\n    \"message\": \"User Updated Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/user/delete-User?userId=662239b9c1ca7a211bb97e07",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"delete-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "662239b9c1ca7a211bb97e07"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete User",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/user/delete-User?userId=662239b9c1ca7a211bb97e07",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"delete-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "662239b9c1ca7a211bb97e07"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "382"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17e-gbXiY13iWIaNZ8AaCcXAdTSDzak\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 10:40:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"662239b9c1ca7a211bb97e07\",\n        \"firstName\": \"priyanshi\",\n        \"lastName\": \"italiya\",\n        \"gender\": \"Female\",\n        \"email\": \"priyanshi@gmail.com\",\n        \"password\": \"$2b$10$y0Y/E4th0vJpJvxEeYEqk.H7MvjsDVfWMgW8V/eqw/f/omwLnIX2K\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": true,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:30:33.302Z\",\n        \"updatedAt\": \"2024-04-19T10:40:04.962Z\"\n    },\n    \"message\": \"User Deleted Succesfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"oldPassword\": \"12345\",\r\n    \"newPassword\": \"I12345\",\r\n    \"confirmPassword\": \"I12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/user/update-Password?userId=6622396cc1ca7a211bb97e04",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"update-Password"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "6622396cc1ca7a211bb97e04"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Change Password",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"oldPassword\": \"12345\",\r\n    \"newPassword\": \"I12345\",\r\n    \"confirmPassword\": \"I12345\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/user/update-Password?userId=6622396cc1ca7a211bb97e04",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"update-Password"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "6622396cc1ca7a211bb97e04"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "376"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"178-KJgPKoKfSF3NuH14VeAtASxVHpU\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2024 10:49:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"6622396cc1ca7a211bb97e04\",\n        \"firstName\": \"isha\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"isha@gmail.com\",\n        \"password\": \"$2b$10$1aARexFgGI6JxLw4LRIAI.oE4HpOqKx/GgWxzW50D/e5EskM3hPxq\",\n        \"mobileNo\": 1234567890,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n        \"updatedAt\": \"2024-04-19T10:49:28.895Z\"\n    },\n    \"message\": \"Password changed successfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Get All Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/product/get-All-Product",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"product",
+										"get-All-Product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/product/get-All-Product",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"product",
+												"get-All-Product"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3889"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f31-q6aoG44fEIT4upH1ZDT2kpv60Kc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:53:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"totalCounts\": 10,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"result\": [\n        {\n            \"_id\": \"662336e87e097e07b9088718\",\n            \"title\": \"Violate-Jacket\",\n            \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\n            \"price\": 450,\n            \"category\": [\n                \"Streetwear\",\n                \"Punk fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Violate\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:30:48.341Z\",\n            \"updatedAt\": \"2024-04-22T03:50:30.727Z\"\n        },\n        {\n            \"_id\": \"662338207e097e07b908871c\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"A classic, versatile wardrobe staple for casual comfort and style.\",\n            \"price\": 900,\n            \"category\": [\n                \"Appare\",\n                \"Fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Beige\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:36:00.483Z\",\n            \"updatedAt\": \"2024-04-20T03:36:00.483Z\"\n        },\n        {\n            \"_id\": \"66234e397e097e07b9088720\",\n            \"title\": \"High heels shoe\",\n            \"description\": \"Elevating fashion and stature with every step\",\n            \"price\": 900,\n            \"category\": [\n                \"Footwear\",\n                \"Fashion Accessories\"\n            ],\n            \"size\": \"7, 8, 9\",\n            \"color\": \"Black\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T05:10:17.222Z\",\n            \"updatedAt\": \"2024-04-20T05:10:17.222Z\"\n        },\n        {\n            \"_id\": \"6625d6134b963b7c94fc9153\",\n            \"title\": \"Sports Slacks\",\n            \"description\": \"Performance-oriented athletic wear designed for versatility, blending the functionality of sports apparel with the comfort and style of casual slacks\",\n            \"price\": 1900,\n            \"category\": [\n                \"Activewear\",\n                \"Fitness Apparel\"\n            ],\n            \"size\": \"28, 30, 32, 34\",\n            \"color\": \"light Blue\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:14:27.881Z\",\n            \"updatedAt\": \"2024-04-22T03:14:27.881Z\"\n        },\n        {\n            \"_id\": \"6625d86e4b963b7c94fc9157\",\n            \"title\": \"Moduler Bathtub\",\n            \"description\": \"A modular bathtub is a customizable bathing fixture designed for flexible installation and configuration, offering versatility in both space utilization and aesthetic appeal.\",\n            \"price\": 15000,\n            \"category\": [\n                \"Fixtures\",\n                \"Interior Design\"\n            ],\n            \"size\": \" 60 inches, 66 inches, and 72 inches\",\n            \"color\": \"Creamy Rose\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:24:30.445Z\",\n            \"updatedAt\": \"2024-04-22T03:24:30.445Z\"\n        },\n        {\n            \"_id\": \"6625d9254b963b7c94fc915b\",\n            \"title\": \"Moduler Toilate\",\n            \"description\": \"Modular Toilet: A customizable restroom solution designed for versatile installation and efficient space utilization.\",\n            \"price\": 12000,\n            \"category\": [\n                \"Architecture\",\n                \"Interior Design\"\n            ],\n            \"size\": \"customize\",\n            \"color\": \"Dark Grey\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:27:33.165Z\",\n            \"updatedAt\": \"2024-04-22T03:27:33.165Z\"\n        },\n        {\n            \"_id\": \"6625d9a24b963b7c94fc915f\",\n            \"title\": \"Modern Hanging Light\",\n            \"description\": \"A sleek and minimalist hanging light fixture, blending contemporary design with functional illumination\",\n            \"price\": 8000,\n            \"category\": [\n                \"Lighting\",\n                \"Interior Decor\"\n            ],\n            \"size\": \"24 inches\",\n            \"color\": \"Copper Red\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:29:38.958Z\",\n            \"updatedAt\": \"2024-04-22T03:29:38.958Z\"\n        },\n        {\n            \"_id\": \"6625da244b963b7c94fc9163\",\n            \"title\": \"Single Seater Chair\",\n            \"description\": \"A single seater chair: A compact seating solution perfect for small spaces, offering both comfort and style.\",\n            \"price\": 2500,\n            \"category\": [\n                \"Furniture\",\n                \"Home Decor\"\n            ],\n            \"size\": \"24 to 36 inches in width, 20 to 30 inches in depth, and 30 to 40 inches in height\",\n            \"color\": \"Dark Brown\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:31:48.096Z\",\n            \"updatedAt\": \"2024-04-22T03:31:48.096Z\"\n        },\n        {\n            \"_id\": \"6625da9c4b963b7c94fc9167\",\n            \"title\": \"Stylish Earring\",\n            \"description\": \"An elegant, silver-detailed earring with a touch of Bohemian charm, perfect for both casual outings and formal occasions.\",\n            \"price\": 2500,\n            \"category\": [\n                \"Fashion Accessories\",\n                \"Jewelry\"\n            ],\n            \"color\": \"Silver\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:33:48.320Z\",\n            \"updatedAt\": \"2024-04-22T03:33:48.320Z\"\n        },\n        {\n            \"_id\": \"6625dba74b963b7c94fc916f\",\n            \"title\": \"Sleevless t-shirt\",\n            \"description\": \"A sleeveless t-shirt, also known as a tank top, is a casual garment characterized by its absence of sleeves, offering comfort and freedom of movement\",\n            \"price\": 1400,\n            \"category\": [\n                \"Fashion\"\n            ],\n            \"size\": \"L\",\n            \"color\": \"Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:38:15.011Z\",\n            \"updatedAt\": \"2024-04-22T03:38:15.011Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/product/get-Product?productId=662338207e097e07b908871c",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"product",
+										"get-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "662338207e097e07b908871c"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/product/get-Product?productId=662338207e097e07b908871c",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"product",
+												"get-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "662338207e097e07b908871c"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "347"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"15b-2hlnhjMNf0/vxqR62ibgdk/Ksow\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:55:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"662338207e097e07b908871c\",\n        \"title\": \"Round Neck T-shirt\",\n        \"description\": \"A classic, versatile wardrobe staple for casual comfort and style.\",\n        \"price\": 900,\n        \"category\": [\n            \"Appare\",\n            \"Fashion\"\n        ],\n        \"size\": \"S,M,L\",\n        \"color\": \"Beige\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-20T03:36:00.483Z\",\n        \"updatedAt\": \"2024-04-20T03:36:00.483Z\"\n    },\n    \"totalRating\": null\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cart",
+					"item": [
+						{
+							"name": "Add to Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cartItem\":\"6625d9a24b963b7c94fc915f\",\r\n    \"quantity\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/cart/add-To-Cart",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"add-To-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add to Cart",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cartItem\":\"662336e87e097e07b9088718\",\r\n    \"quantity\":5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/cart/add-To-Cart",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"add-To-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "262"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"106-IltNA8zaZhRCauM2Ch1tuNtPmDQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 05:11:33 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"cartItem\": \"662336e87e097e07b9088718\",\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"_id\": \"6625f185569731107d2403cf\",\n        \"createdAt\": \"2024-04-22T05:11:33.918Z\",\n        \"updatedAt\": \"2024-04-22T05:11:33.918Z\"\n    },\n    \"message\": \"Cart Added successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/cart/get-All-Cart",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"get-All-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/cart/get-All-Cart",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"get-All-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2421"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"975-lD5h+R4zS4oZ6HZpcGznjFkHY00\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 05:23:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6625f185569731107d2403cf\",\n        \"user\": {\n            \"_id\": \"6622396cc1ca7a211bb97e04\",\n            \"firstName\": \"isha\",\n            \"lastName\": \"patel\",\n            \"gender\": \"Female\",\n            \"email\": \"isha@gmail.com\",\n            \"password\": \"$2b$10$1aARexFgGI6JxLw4LRIAI.oE4HpOqKx/GgWxzW50D/e5EskM3hPxq\",\n            \"mobileNo\": 1234567890,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n            \"updatedAt\": \"2024-04-19T10:49:28.895Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"662336e87e097e07b9088718\",\n            \"title\": \"Violate-Jacket\",\n            \"description\": \"A rebellious fusion of style and attitude, daring to defy conventional fashion norms\",\n            \"price\": 450,\n            \"category\": [\n                \"Streetwear\",\n                \"Punk fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Violate\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:30:48.341Z\",\n            \"updatedAt\": \"2024-04-22T03:50:30.727Z\"\n        },\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T05:11:33.918Z\",\n        \"updatedAt\": \"2024-04-22T05:11:33.918Z\"\n    },\n    {\n        \"_id\": \"6625f1cb569731107d2403d4\",\n        \"user\": {\n            \"_id\": \"6622396cc1ca7a211bb97e04\",\n            \"firstName\": \"isha\",\n            \"lastName\": \"patel\",\n            \"gender\": \"Female\",\n            \"email\": \"isha@gmail.com\",\n            \"password\": \"$2b$10$1aARexFgGI6JxLw4LRIAI.oE4HpOqKx/GgWxzW50D/e5EskM3hPxq\",\n            \"mobileNo\": 1234567890,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n            \"updatedAt\": \"2024-04-19T10:49:28.895Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"662338207e097e07b908871c\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"A classic, versatile wardrobe staple for casual comfort and style.\",\n            \"price\": 900,\n            \"category\": [\n                \"Appare\",\n                \"Fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Beige\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:36:00.483Z\",\n            \"updatedAt\": \"2024-04-20T03:36:00.483Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T05:12:43.313Z\",\n        \"updatedAt\": \"2024-04-22T05:12:43.313Z\"\n    },\n    {\n        \"_id\": \"6625f1e4569731107d2403d9\",\n        \"user\": {\n            \"_id\": \"6622396cc1ca7a211bb97e04\",\n            \"firstName\": \"isha\",\n            \"lastName\": \"patel\",\n            \"gender\": \"Female\",\n            \"email\": \"isha@gmail.com\",\n            \"password\": \"$2b$10$1aARexFgGI6JxLw4LRIAI.oE4HpOqKx/GgWxzW50D/e5EskM3hPxq\",\n            \"mobileNo\": 1234567890,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-19T09:29:16.351Z\",\n            \"updatedAt\": \"2024-04-19T10:49:28.895Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"66234e397e097e07b9088720\",\n            \"title\": \"High heels shoe\",\n            \"description\": \"Elevating fashion and stature with every step\",\n            \"price\": 900,\n            \"category\": [\n                \"Footwear\",\n                \"Fashion Accessories\"\n            ],\n            \"size\": \"7, 8, 9\",\n            \"color\": \"Black\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T05:10:17.222Z\",\n            \"updatedAt\": \"2024-04-20T05:10:17.222Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T05:13:08.869Z\",\n        \"updatedAt\": \"2024-04-22T05:13:08.869Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/cart/get-Cart?cartId=6625f1cb569731107d2403d4",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"get-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6625f1cb569731107d2403d4"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/cart/get-Cart?cartId=6625f1cb569731107d2403d4",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"get-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6625f1cb569731107d2403d4"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "504"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1f8-/dizTbw83L5qr7t9wZx6NkvWBAw\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 05:26:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6625f1cb569731107d2403d4\",\n    \"user\": \"6622396cc1ca7a211bb97e04\",\n    \"cartItem\": {\n        \"_id\": \"662338207e097e07b908871c\",\n        \"title\": \"Round Neck T-shirt\",\n        \"description\": \"A classic, versatile wardrobe staple for casual comfort and style.\",\n        \"price\": 900,\n        \"category\": [\n            \"Appare\",\n            \"Fashion\"\n        ],\n        \"size\": \"S,M,L\",\n        \"color\": \"Beige\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-20T03:36:00.483Z\",\n        \"updatedAt\": \"2024-04-20T03:36:00.483Z\"\n    },\n    \"quantity\": 2,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-22T05:12:43.313Z\",\n    \"updatedAt\": \"2024-04-22T05:12:43.313Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/cart/update-Cart?cartId=6625f1cb569731107d2403d4",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"update-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6625f1cb569731107d2403d4"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Cart",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"quantity\": 5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/cart/update-Cart?cartId=6625f1cb569731107d2403d4",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"update-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6625f1cb569731107d2403d4"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "561"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"231-0F65m/eXb0NtIgQy1C8ITeB9jtY\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 05:30:30 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"_id\": \"6625f1cb569731107d2403d4\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"cartItem\": {\n            \"_id\": \"662338207e097e07b908871c\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"A classic, versatile wardrobe staple for casual comfort and style.\",\n            \"price\": 900,\n            \"category\": [\n                \"Appare\",\n                \"Fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Beige\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:36:00.483Z\",\n            \"updatedAt\": \"2024-04-20T03:36:00.483Z\"\n        },\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T05:12:43.313Z\",\n        \"updatedAt\": \"2024-04-22T05:30:30.122Z\"\n    },\n    \"message\": \"Cart Item Updated SuccessFully.....\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/cart/delete-Cart?cartId=6625f1cb569731107d2403d4",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"delete-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6625f1cb569731107d2403d4"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Cart",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/cart/delete-Cart?cartId=6625f1cb569731107d2403d4",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"delete-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6625f1cb569731107d2403d4"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "556"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"22c-pgGP9Lfd8EMpZLsJfk52QbRsEAo\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 05:31:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"_id\": \"6625f1cb569731107d2403d4\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"cartItem\": {\n            \"_id\": \"662338207e097e07b908871c\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"A classic, versatile wardrobe staple for casual comfort and style.\",\n            \"price\": 900,\n            \"category\": [\n                \"Appare\",\n                \"Fashion\"\n            ],\n            \"size\": \"S,M,L\",\n            \"color\": \"Beige\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-20T03:36:00.483Z\",\n            \"updatedAt\": \"2024-04-20T03:36:00.483Z\"\n        },\n        \"quantity\": 5,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T05:12:43.313Z\",\n        \"updatedAt\": \"2024-04-22T05:31:52.741Z\"\n    },\n    \"message\": \"Cart Deleted Successfully......\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Wishlist",
+					"item": [
+						{
+							"name": "Add to Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product\":\"662338207e097e07b908871c\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/wishlist/add-New-Wishlist",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"add-New-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product\":\"662336e87e097e07b9088718\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/wishlist/add-New-Wishlist",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"wishlist",
+												"add-New-Wishlist"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f6-by8cbOt+9VpLmlbJgoG/BwKi+lI\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:22:33 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wishlist\": {\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"662336e87e097e07b9088718\",\n        \"isDelete\": false,\n        \"_id\": \"662602295b003835096830f6\",\n        \"createdAt\": \"2024-04-22T06:22:33.564Z\",\n        \"updatedAt\": \"2024-04-22T06:22:33.564Z\"\n    },\n    \"Message\": \"Wishlist is Added...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/wishlist/get-All-Wishlist",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"get-All-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Wishlist",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/wishlist/get-All-Wishlist",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"wishlist",
+												"get-All-Wishlist"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "403"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"193-ME3Ax3PeiU56fzQKrkDt3HhcAZ0\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:24:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"662602295b003835096830f6\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"662336e87e097e07b9088718\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:22:33.564Z\",\n        \"updatedAt\": \"2024-04-22T06:22:33.564Z\"\n    },\n    {\n        \"_id\": \"6626024b5b003835096830fa\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"662338207e097e07b908871c\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:23:07.667Z\",\n        \"updatedAt\": \"2024-04-22T06:23:07.667Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Delete Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/wishlist/delete-Wishlist?Id=662602295b003835096830f6",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"delete-Wishlist"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "662602295b003835096830f6"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Wishlist",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/wishlist/delete-Wishlist?Id=662602295b003835096830f6",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"wishlist",
+												"delete-Wishlist"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "662602295b003835096830f6"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "247"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f7-M2cMtcwVDw/TJQhj6WQRqMpokVs\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:27:21 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wishlist\": {\n        \"_id\": \"662602295b003835096830f6\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"662336e87e097e07b9088718\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T06:22:33.564Z\",\n        \"updatedAt\": \"2024-04-22T06:27:21.063Z\"\n    },\n    \"Message\": \"Wishlist is Deleted...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "Add to Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/order/add-New-Order",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"add-New-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add to Order",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/order/add-New-Order",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"add-New-Order"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "414"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"19e-VWq/lIKYvmcptYo7i8L7TmgU6KE\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 07:15:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"newOrder\": {\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"items\": [\n            {\n                \"product\": \"662336e87e097e07b9088718\",\n                \"quantity\": 5,\n                \"_id\": \"66260e884c72179c46928bea\"\n            },\n            {\n                \"product\": \"66234e397e097e07b9088720\",\n                \"quantity\": 3,\n                \"_id\": \"66260e884c72179c46928beb\"\n            }\n        ],\n        \"totalAmount\": 4950,\n        \"isDelete\": false,\n        \"_id\": \"66260e884c72179c46928be9\",\n        \"createdAt\": \"2024-04-22T07:15:20.867Z\",\n        \"updatedAt\": \"2024-04-22T07:15:20.867Z\"\n    },\n    \"message\": \"Order Place Successfuly...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/order/get-All-Order",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"get-All-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/order/get-All-Order",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"get-All-Order"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "814"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"32e-FRqtoE903vK6OBAnRXwmpAs9gy8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 08:15:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"66260e884c72179c46928be9\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"items\": [\n            {\n                \"product\": \"662336e87e097e07b9088718\",\n                \"quantity\": 5,\n                \"_id\": \"66260e884c72179c46928bea\"\n            },\n            {\n                \"product\": \"66234e397e097e07b9088720\",\n                \"quantity\": 3,\n                \"_id\": \"66260e884c72179c46928beb\"\n            }\n        ],\n        \"totalAmount\": 4950,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T07:15:20.867Z\",\n        \"updatedAt\": \"2024-04-22T07:15:20.867Z\"\n    },\n    {\n        \"_id\": \"66261b0f4c72179c46928bfc\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"items\": [\n            {\n                \"product\": \"662336e87e097e07b9088718\",\n                \"quantity\": 5,\n                \"_id\": \"66261b0f4c72179c46928bfd\"\n            },\n            {\n                \"product\": \"66234e397e097e07b9088720\",\n                \"quantity\": 3,\n                \"_id\": \"66261b0f4c72179c46928bfe\"\n            },\n            {\n                \"product\": \"6625dba74b963b7c94fc916f\",\n                \"quantity\": 10,\n                \"_id\": \"66261b0f4c72179c46928bff\"\n            }\n        ],\n        \"totalAmount\": 18950,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T08:08:47.445Z\",\n        \"updatedAt\": \"2024-04-22T08:08:47.445Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/order/get-Order?orderId=66260e884c72179c46928be9",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"get-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "66260e884c72179c46928be9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Specific Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/order/get-Order?orderId=66260e884c72179c46928be9",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"get-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "66260e884c72179c46928be9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "362"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"16a-Ku1IYzcz8d/7phDdUbiwmeIAIyA\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 08:50:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"66260e884c72179c46928be9\",\n    \"user\": \"6622396cc1ca7a211bb97e04\",\n    \"items\": [\n        {\n            \"product\": \"662336e87e097e07b9088718\",\n            \"quantity\": 5,\n            \"_id\": \"66260e884c72179c46928bea\"\n        },\n        {\n            \"product\": \"66234e397e097e07b9088720\",\n            \"quantity\": 3,\n            \"_id\": \"66260e884c72179c46928beb\"\n        }\n    ],\n    \"totalAmount\": 4950,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-22T07:15:20.867Z\",\n    \"updatedAt\": \"2024-04-22T07:15:20.867Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/order/delete-Order?orderId=66261b0f4c72179c46928bfc",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"delete-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "66261b0f4c72179c46928bfc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Order",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/order/delete-Order?orderId=66261b0f4c72179c46928bfc",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"delete-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "66261b0f4c72179c46928bfc"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "500"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1f4-bgjNWc8PKe0a0OW+r+6p99C+9Dw\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 08:54:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"order\": {\n        \"_id\": \"66261b0f4c72179c46928bfc\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"items\": [\n            {\n                \"product\": \"662336e87e097e07b9088718\",\n                \"quantity\": 5,\n                \"_id\": \"66261b0f4c72179c46928bfd\"\n            },\n            {\n                \"product\": \"66234e397e097e07b9088720\",\n                \"quantity\": 3,\n                \"_id\": \"66261b0f4c72179c46928bfe\"\n            },\n            {\n                \"product\": \"6625dba74b963b7c94fc916f\",\n                \"quantity\": 10,\n                \"_id\": \"66261b0f4c72179c46928bff\"\n            }\n        ],\n        \"totalAmount\": 18950,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T08:08:47.445Z\",\n        \"updatedAt\": \"2024-04-22T08:54:13.195Z\"\n    },\n    \"message\": \"Order Deleted Successfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Review",
+					"item": [
+						{
+							"name": "Add Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product\":\"66234e397e097e07b9088720\",\r\n    \"comment\":\"It is a bad product ever.\",\r\n    \"rating\":0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/review/add-New-Review",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"review",
+										"add-New-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add Review",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product\":\"6625d9a24b963b7c94fc915f\",\r\n    \"comment\":\"Lights are not Good.\",\r\n    \"rating\":1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/review/add-New-Review",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"review",
+												"add-New-Review"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "286"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11e-7koAwaIAA4KVbZ+Tq5sbLOfNrjk\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 09:03:55 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"6625d9a24b963b7c94fc915f\",\n        \"rating\": 1,\n        \"comment\": \"Lights are not Good.\",\n        \"isDelete\": false,\n        \"_id\": \"662627fb56c255e45bc93e80\",\n        \"createdAt\": \"2024-04-22T09:03:55.870Z\",\n        \"updatedAt\": \"2024-04-22T09:03:55.870Z\"\n    },\n    \"Message\": \"Review is Added...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/review/get-All-Review",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"review",
+										"get-All-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/review/get-All-Review",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"review",
+												"get-All-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "492"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ec-S4ussswGxAa8HcBUaOz4IWsW9gQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 09:07:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6626273856c255e45bc93e67\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"66260e884c72179c46928be9\",\n        \"rating\": 5,\n        \"comment\": \"it is a good product.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T09:00:40.897Z\",\n        \"updatedAt\": \"2024-04-22T09:00:40.897Z\"\n    },\n    {\n        \"_id\": \"662627fb56c255e45bc93e80\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"6625d9a24b963b7c94fc915f\",\n        \"rating\": 1,\n        \"comment\": \"Lights are not Good.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T09:03:55.870Z\",\n        \"updatedAt\": \"2024-04-22T09:03:55.870Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Delete Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/review/delete-Review?Id=6626273856c255e45bc93e67",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "6626273856c255e45bc93e67"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/review/delete-Review?Id=6626273856c255e45bc93e67",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "6626273856c255e45bc93e67"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "301"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12d-9Eqz2r6YJQ3dUIg0KVWTXukWdfc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 09:09:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"6626273856c255e45bc93e67\",\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"product\": \"66260e884c72179c46928be9\",\n        \"rating\": 5,\n        \"comment\": \"it is a good product.\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T09:00:40.897Z\",\n        \"updatedAt\": \"2024-04-22T09:09:20.018Z\"\n    },\n    \"Message\": \"Review is Deleted SuccessFully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Contact",
+					"item": [
+						{
+							"name": "Send Request User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"jhone\",\r\n    \"email\":\"jhone@test.in\",\r\n    \"phone\":1234567890,\r\n    \"message\":\"Nice Product...\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/contact/send-Request-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"contact",
+										"send-Request-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Send Request User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"jhone\",\r\n    \"email\":\"jhone@test.in\",\r\n    \"phone\":1234567890,\r\n    \"message\":\"Nice Product...\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/contact/send-Request-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"contact",
+												"send-Request-User"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "287"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11f-HMmP+C8ua7SqqKEuFE8LBLuJ2/c\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 09:30:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"user\": \"6622396cc1ca7a211bb97e04\",\n        \"name\": \"jhone\",\n        \"email\": \"jhone@test.in\",\n        \"phone\": 1234567890,\n        \"message\": \"Nice Product...\",\n        \"_id\": \"66262e44ff8c0bffeee50acb\",\n        \"createdAt\": \"2024-04-22T09:30:44.601Z\",\n        \"updatedAt\": \"2024-04-22T09:30:44.601Z\"\n    },\n    \"message\": \"New Request added SuccesFully...\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "basicUrl",
+			"value": "http://localhost:1313/api/",
+			"type": "string"
+		},
+		{
+			"key": "adminToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYyMjIxNTMwMjc1NDg2YzZmOTE3OThmIiwiaWF0IjoxNzEzNTE1ODM3fQ.6QW4PY7EBBmg5mFbyRZeXCiO6TtwEQAUNU8psx_0IaY",
+			"type": "string"
+		},
+		{
+			"key": "userToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyMzk2Y2MxY2E3YTIxMWJiOTdlMDQiLCJpYXQiOjE3MTM1MjE3ODh9.8RyPfT94bwcheriSZscv43YZJuNTyZvct95A0m8vUNA",
+			"type": "string"
+		}
+	]
+}
